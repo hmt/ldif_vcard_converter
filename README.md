@@ -1,38 +1,20 @@
-# create-svelte
+# LDIF to VCARD (VCF) converter
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This simple app lets you convert any *.ldif* file to a *.vcf* file.
 
-## Creating a project
+Simply upload the file into the browser and all contacts will automatically be converted to a *.vcf* file.
 
-If you're seeing this, you've probably already done this step. Congrats!
+To download the file, click the download button.
 
-```bash
-# create a new project in the current directory
-npm init svelte
+Note: This app only converts LDIF files to VCARD files. No data is sent anywhere the conversion takes place in your browser. Feel free to download and run the app on your own computer.
 
-# create a new project in my-app
-npm init svelte my-app
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+git clone https://github.com/hmt/ldif_vcard_converter.git
+cd ldif_vcard_converter
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Then open your browser and go to [http://localhost:3000/](http://localhost:3000/).
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+This app is licensed under the [MIT License](LICENSE).
